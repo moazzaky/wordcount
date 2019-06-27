@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WCO_home</title>
+</head>
+<body>
+    <h1>Word Count</h1>
+
+    <div>
+        <form action="{% url 'count' %}">
+            <label for="words_id"></label>
+            <textarea cols="40" rows="10" name="fulltext" id="words_id"></textarea>
+            <br>
+            <input type="submit" value="Count!">
+        </form>
+        <a href="{% url 'about' %}">About the site</a>
+    </div>
+</body>
+</html>

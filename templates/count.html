@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>count</title>
+</head>
+<body>
+    <h1>Count</h1>
+    <p>the text has {{ text_count }} words!</p>
+    <br>
+    <a href="{% url 'home' %}">count new words</a>
+    <p>max word repeated {{ nums }} times</p>
+    <br>
+    {% for word,wordcount in sorted %}
+        {{ word }} - {{ wordcount }}
+        <br>
+    {% endfor %}
+    <p>{{ sorted }}</p>
+</body>
+</html>
